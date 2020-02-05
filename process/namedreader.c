@@ -12,10 +12,7 @@ int main()
 	int fd1; 
 
 	// FIFO file path 
-	char * myfifo = "/tmp/myfifo"; 
-
-	// Creating the named file(FIFO) 
-	// mkfifo(<pathname>,<permission>) 
+	char * myfifo = "/tmp/myfifo";  
 	mkfifo(myfifo, 0666); 
 
 	char str1[80], str2[80]; 
